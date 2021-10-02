@@ -18,13 +18,18 @@ body {
 header {
     background-color: #fff;
     min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
 }
 
-header a {
-    display: inline-block;
-    width: 60px;
-    height: 100%;
-    text-align: center;
+header .icon {
+    font-size: 45px;
+}
+
+header .title {
+    font-size: 26px;
 }
 
 main {
