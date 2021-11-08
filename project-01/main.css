@@ -5,8 +5,6 @@ html {
 
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     height: 100vh;
 }
@@ -34,20 +32,30 @@ header .title {
     font-size: 26px;
 }
 
-.main-container {
+aside {
+    width: 125px;
+    height: 100%;
+    float: left;
+}
+
+main {
+    height: calc(100% - 70px);
+    padding: 30px 50px 0 150px;
+}
+
+.page-header > :first-child {
+    margin-top: 0;   
+}
+
+.page-header > :last-child {
+    margin-bottom: 0;
+}
+
+.scroll-list {
+    height: calc(100% - 94.44px);
     overflow: auto;
 }
 
-.main-container nav {
-    background: #fff;
-    float: left;
-    height: 100%;
-    position: fixed;
-    width: 100px;
-    box-shadow: -14px 0px 20px 0px;
-}
-
-.main-container main {
-    margin-left: 100px;
-    padding: 25px 70px;
+.scroll-list > :first-child {
+    margin-top: 0;
 }

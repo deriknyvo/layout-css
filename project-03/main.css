@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+    background-color: #efefef;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+nav {
+    background-color: #fff;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    box-shadow: 0px -11px 20px 0px;
+    z-index: 1;
+}
+
+nav .icon {
+    font-size: 45px;
+}
+
+nav .title {
+    font-size: 26px;
+}
+
+section {
+    padding: 30px 150px 5px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    height: 93%;
+}
+
+.scroll-list {
+    overflow: auto;
+}
+
+.withdraw-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.withdraw {
+    font-size: 90px;
+    margin-left: 5px;
+}
+
+.input-output {
+    display: flex;
+    justify-content: center;
+}
+
+.input-output-container {
+    margin-top: 25px;
+}
+
+.input-output span {
+    font-size: 26px;
+}
+
+.item {
+    display: flex;
+}
+
+.scroll-list p {
+    width: 50%;
+}
