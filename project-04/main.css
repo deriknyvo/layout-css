@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+    background-color: #efefef;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    box-shadow: 0px -11px 20px 0px;
+    z-index: 1;
+}
+
+header .icon {
+    font-size: 45px;
+}
+
+header .title {
+    font-size: 26px;
+}
+
+section {
+    height: 93%;
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.scroll-list {
+    overflow: auto;
+}
+
+aside {
+    background-color: #fff;
+    min-width: 9%;
+    box-shadow: -14px 17px 20px 0px;
+}
+
+@media screen and (min-width: 1440px) {
+    aside {
+        min-width: 7%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    aside {
+        min-width: 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    height: 65px;
+    text-align: center;
+}
+
+
+/* Chat Component */
+.chat-component {
+    display: flex;
+    height: 100%;
+}
+
+.chat-container {
+    flex-grow: 1;
+    background-color: bisque;
+}
+
+.conversations-container {
+    width: 30%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.tabs div {
+    background-color: white;
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 400ms;
+    border-right: 1px solid #ececec;
+}
+
+.tabs div:hover {
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+.tabs span {
+    flex-grow: 1;
+}
+
+.input-search {
+    padding: 20px
+}
+
+.input-search input {
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 1.0rem;
+    color: #4e4e4e;
+    border: 1px solid lightgrey;
+}
+
+.conversations-container .conversations {
+    max-height: calc(100% - 142px);
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.conversations-container .conversations div{
+    max-height: 100%;
+    overflow: auto;
+}
