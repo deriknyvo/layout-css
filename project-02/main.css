@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 
-nav {
+header {
     background-color: #fff;
     height: 7%;
     display: flex;
@@ -20,11 +20,11 @@ nav {
     z-index: 1;
 }
 
-nav .icon {
+header .icon {
     font-size: 45px;
 }
 
-nav .title {
+header .title {
     font-size: 26px;
 }
 
@@ -37,8 +37,43 @@ main {
     padding: 35px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .scroll-list {
     overflow: auto;
+}
+
+aside {
+    background-color: #fff;
+    min-width: 9%;
+    box-shadow: -14px 17px 20px 0px;
+}
+
+@media screen and (min-width: 1440px) {
+    aside {
+        min-width: 7%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    aside {
+        min-width: 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    height: 65px;
+    text-align: center;
 }
